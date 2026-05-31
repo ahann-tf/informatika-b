@@ -426,26 +426,34 @@ footer {
 /* ==========================================
    PERBAIKAN KHUSUS LAYAR HP (RESPONSIVE)
    ========================================== */
+/* ==========================================
+   PERBAIKAN KHUSUS LAYAR HP (RESPONSIVE)
+   ========================================== */
 @media (max-width: 768px) {
-    /* 1. Beranda: Biar teksnya ga kebesaran dan kotaknya pas */
+    /* 1. Beranda: Teks dikecilin & kotak dipendekin biar foto ga ke-zoom */
     .hero-section {
-        padding: 20px;
-        min-height: 400px;
+        padding: 30px 15px;
+        min-height: 250px; /* Kotaknya dipendekin */
+        background-position: top center; /* Fokusin kamera ke wajah anak-anak di posisi atas */
     }
+    
     .hero-content h2 {
-        font-size: 32px; /* Tulisan diperkecil dikit buat HP */
+        font-size: 26px; /* Tulisan dikecilin banget biar ga patah jadi 4 baris */
+        margin-bottom: 10px;
     }
+    
     .hero-content p {
-        font-size: 16px;
+        font-size: 13px; /* Slogan juga dikecilin dikit */
+        line-height: 1.4;
     }
 
-    /* 2. PJ Matkul: Biar kartunya ga kepotong dan rapi ke bawah */
+    /* 2. PJ Matkul: (Tetap biarkan kodingan ini seperti yang tadi) */
     .pj-card {
-        width: 100%; /* Kartu memenuhi layar HP */
-        max-width: 320px; /* Tapi ga terlalu lebar */
+        width: 100%; 
+        max-width: 320px; 
     }
     .pj-baris-atas, .pj-baris-tengah, .pj-baris-bawah {
-        flex-direction: column; /* Baris diubah jadi kolom sejajar ke bawah */
+        flex-direction: column; 
         align-items: center;
     }
 }
