@@ -427,47 +427,30 @@ footer {
    PERBAIKAN KHUSUS LAYAR HP (RESPONSIVE)
    ========================================== */
 @media (max-width: 768px) {
-    /* 1. Beranda */
+    /* 1. Beranda: Teks dikecilin & kotak dipendekin biar foto ga ke-zoom */
     .hero-section {
         padding: 30px 15px;
-        min-height: 250px;
-        background-position: top center;
+        min-height: 250px; /* Kotaknya dipendekin */
+        background-position: top center; /* Fokusin kamera ke wajah anak-anak di posisi atas */
     }
+    
     .hero-content h2 {
-        font-size: 26px;
+        font-size: 26px; /* Tulisan dikecilin banget biar ga patah jadi 4 baris */
         margin-bottom: 10px;
     }
+    
     .hero-content p {
-        font-size: 13px;
+        font-size: 13px; /* Slogan juga dikecilin dikit */
         line-height: 1.4;
     }
 
-    /* 2. MODE SLIDE KHUSUS (Biar nggak berantakin yang lain) */
-    
-    /* Bungkus Struktur (pakai .struktur-wrapper dari HTML kamu tadi) */
-    .struktur-wrapper > div { 
-        display: flex;
-        flex-direction: row; 
-        flex-wrap: nowrap; 
-        overflow-x: auto; 
-        padding-bottom: 15px; 
-        gap: 15px;
-    }
-    
-    /* Bungkus PJ Matkul (asumsi class-nya pj-baris-...) */
-    [class*="pj-baris-"] {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        padding-bottom: 15px;
-        gap: 15px;
-    }
-
-    /* Aturan kartu biar lebarnya pas */
-    .struktur-wrapper .card, 
+    /* 2. PJ Matkul: (Tetap biarkan kodingan ini seperti yang tadi) */
     .pj-card {
-        flex: 0 0 auto; 
-        width: 220px; 
+        width: 100%; 
+        max-width: 320px; 
+    }
+    .pj-baris-atas, .pj-baris-tengah, .pj-baris-bawah {
+        flex-direction: column; 
+        align-items: center;
     }
 }
