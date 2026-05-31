@@ -427,34 +427,24 @@ footer {
    PERBAIKAN KHUSUS LAYAR HP (RESPONSIVE)
    ========================================== */
 @media (max-width: 768px) {
-    /* 1. Beranda (Tetap rapi kayak editan terakhir) */
-    .hero-section {
-        padding: 30px 15px;
-        min-height: 250px;
-        background-position: top center;
-    }
-    .hero-content h2 {
-        font-size: 26px;
-        margin-bottom: 10px;
-    }
-    .hero-content p {
-        font-size: 13px;
-        line-height: 1.4;
-    }
+    /* ... (Kodingan hero-section beranda biarin aja seperti tadi) ... */
 
-    /* 2. MODE SLIDE/SWIPE: Biar ga kepanjangan ke bawah! */
-    /* (Ini buat PJ Matkul, kalau ada class struktur/galeri bisa ditambahin koma di sebelahnya) */
-    .pj-baris-atas, .pj-baris-tengah, .pj-baris-bawah {
-        flex-direction: row; /* Tetap jejerin ke samping kayak desktop */
-        flex-wrap: nowrap; /* Jangan diturunin ke bawah! */
-        overflow-x: auto; /* Munculin fitur geser/swipe kiri-kanan */
-        justify-content: flex-start; /* Mulai dari pinggir kiri layar */
-        padding-bottom: 15px; /* Spasi bawah biar gesernya enak */
+    /* MODE SLIDE/SWIPE: Buat PJ Matkul DAN Struktur Kelas */
+    .pj-baris-atas, 
+    .pj-baris-tengah, 
+    .pj-baris-bawah, 
+    .index.html { /* <-- Ganti pakai nama class bungkus struktur di HTML kamu */
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+        justify-content: flex-start; 
+        padding-bottom: 15px; 
         gap: 15px;
     }
 
-    .pj-card {
-        flex: 0 0 auto; /* WAJIB! Biar kartu ga gepeng kepaksa mengecil */
-        width: 220px; /* Ukuran tetap normal kayak di laptop */
+    .pj-card, 
+    .index.html { /* <-- Ganti pakai nama class kotak struktur kamu */
+        flex: 0 0 auto; 
+        width: 220px; 
     }
 }
