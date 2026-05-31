@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatika B </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar-container">
+            <h1 class="logo">Debuggers<span>Chil</span></h1>
+            <nav>
+                <a href="javascript:void(0)" onclick="bukaTab('beranda')">Beranda</a>
+                <a href="javascript:void(0)" onclick="bukaTab('struktur')">Struktur</a>
+                <a href="javascript:void(0)" onclick="bukaTab('pj-matkul')">PJ Matkul</a>
+                <a href="javascript:void(0)" onclick="bukaTab('mahasiswa')">Anggota Kelas</a>
+                <a href="javascript:void(0)" onclick="bukaTab('galeri')">Galeri Moments</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="beranda" class="hero-section tab-content active">
+            <div class="hero-content">
+                <h2>Selamat Datang di <br><span>INFORMATIKA B</span></h2>
+                <p><I>Kolaborasi tanpa jarak, Solidaritas tanpa batas</I></p>
+            </div>
+        </section>
+
+        <section id="struktur" class="section-container tab-content">
+            <h3 class="section-title">Struktur Organisasi Kelas</h3>
+            <div class="struktur-wrapper">
+                <div class="baris-atas">
+                    <div class="card">
+                        <img src="foto-ghathan.jpeg" class="struktur-foto" alt="Kosma">
+                        <h4>Kosma</h4>
+                        <p class="name">M. Ghathan Faturrahman</p>
+                    </div>
+                    <div class="card">
+                        <img src="foto-rio.jpeg" class="struktur-foto" alt="Wakil Kosma">
+                        <h4>Wakil Kosma</h4>
+                        <p class="name">M. Rio Raflyansyah</p>
+                    </div>
+                </div>
+
+                <div class="baris-bawah">
+                    <div class="card">
+                        <img src="foto-tria.jpg" class="struktur-foto" alt="Sekretaris">
+                        <h4>Sekretaris</h4>
+                        <p class="name">Tria Nadirotun Yumna</p>
+                    </div>
+                    <div class="card">
+                        <img src="foto-kirey.jpg" class="struktur-foto" alt="Bendahara 1">
+                        <h4>Bendahara 1</h4>
+                        <p class="name">Kirey Harumi</p>
+                    </div>
+                    <div class="card">
+                        <img src="foto-khadijah.jpg" class="struktur-foto" alt="Bendahara 2">
+                        <h4>Bendahara 2</h4>
+                        <p class="name">Khadijah Nur Kamila Huwaida</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: PJ MATA KULIAH -->
+<section id="pj-matkul" class="section-container tab-content">
+    <h3 class="section-title">Penanggung Jawab (PJ) Mata Kuliah</h3>
+    
+    <div class="pj-wrapper">
+        <!-- BARIS ATAS (3 Orang) -->
+        <div class="pj-baris-atas">
+            <div class="pj-card">
+                <img src="foto-ali.jpg" class="pj-foto" alt="M. Ali Chaidar">
+                <h4>M. Ali Chaidar</h4>
+                <p class="pj-label">Sebagai PJ Matakuliah:</p>
+                <p class="pj-course">Bahasa Arab</p>
+            </div>
+            <div class="pj-card">
+                <img src="foto-ima.jpg" class="pj-foto" alt="Ima Imaniya Hasana">
+                <h4>Ima Imaniya Hasana</h4>
+                <p class="pj-label">Sebagai PJ Matakuliah:</p>
+                <p class="pj-course">Pengenalan Pemrograman</p>
+            </div>
+            <div class="pj-card">
+                <img src="foto-kirey.jpg" class="pj-foto" alt="Kirey Harumi">
+                <h4>Kirey Harumi</h4>
+                <p class="pj-label">Sebagai PJ Matakuliah:</p>
+                <p class="pj-course">Manajemen Informatika</p>
+            </div>
+        </div>
+
+        <!-- BARIS TENGAH (2 Orang) -->
+        <div class="pj-baris-tengah">
+            <div class="pj-card">
+                <img src="foto-ghathan.jpg" class="pj-foto" alt="Ghathaan Faturrahman">
+                <h4>Ghathaan Faturrahman</h4>
+                <p class="pj-label">Sebagai PJ Matakuliah:</p>
+                <p class="pj-course">Organisasi & Arsitektur Komp.</p>
+            </div>
+            <div class="pj-card">
+                <img src="foto-anargya.jpg" class="pj-foto" alt="Anargya Nismara Putri Y.">
+                <h4>Anargya Nismara Putri Y.</h4>
+                <p class="pj-label">Sebagai PJ Matakuliah:</p>
+                <p class="pj-course">Basis Data</p>
+            </div>
+        </div>
+
+        <!-- BARIS BAWAH (Kamu & Khadijah/Lala - Masing-masing 2 Matkul) -->
+        <div class="pj-baris-bawah">
+            <div class="pj-card">
+                <img src="foto-farhan.jpg" class="pj-foto" alt="Farhan Tirta Firdaus">
+                <h4>Farhan Tirta Firdaus</h4>
+                <p class="pj-label">Sebagai PJ Matakuliah:</p>
+                <p class="pj-course">Kewarganegaraan</p>
+                <p class="pj-course">Bahasa Indonesia</p>
+            </div>
+            <div class="pj-card">
+                <img src="foto-khadijah.jpg" class="pj-foto" alt="Khadijah Nur Kamila H.">
+                <h4>Khadijah Nur Kamila H.</h4>
+                <p class="pj-label">Sebagai PJ Matakuliah:</p>
+                <p class="pj-course">Aljabar Linear</p>
+                <p class="pj-course">Struktur Data</p>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        <section id="mahasiswa" class="section-container tab-content">
+            <h3 class="section-title">Anggota Kelas</h3>
+            <div class="member-grid">
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Daffa Rifat Aryansyah</h5><p>NIM: 241730036</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>M. Rio Raflyansyah</h5><p>NIM: 251603037</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Ari Irfan Kamil</h5><p>NIM: 251603038</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Tria Nadirotun Yumna</h5><p>NIM: 251603039</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>M. Rizky Agustian Devi</h5><p>NIM: 251603040</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>M. Ali Chaidar Dzakwan</h5><p>NIM: 251603041</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Keisha Alicia</h5><p>NIM: 251603042</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Ima Imaniya Hasana</h5><p>NIM: 251603043</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Hana Sela</h5><p>NIM: 251603044</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Halida Hamzah</h5><p>NIM: 251603045</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Andre Priya Sudarma</h5><p>NIM: 251603046</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Nur Ufairoh Alsalsabil</h5><p>NIM: 251603047</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Dovin Mavaza</h5><p>NIM: 251603048</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Suffiah</h5><p>NIM: 251603049</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Hilmi Imtiaz</h5><p>NIM: 251603050</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Rayshard Fadlan M.</h5><p>NIM: 251603051</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Ahmad Rosyid</h5><p>NIM: 251603052</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Hendry</h5><p>NIM: 251603053</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Rohadatul Aisy</h5><p>NIM: 251603054</p></div>
+                
+                <div class="member-card"><img src="foto-farhan.jpg" class="avatar"><h5>Farhan Tirta Firdaus</h5><p>NIM: 251603055</p></div>
+                
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Muhamad Rizal</h5><p>NIM: 251603056</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Riki Torikhul Huda</h5><p>NIM: 251603057</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Alya Nur Novany</h5><p>NIM: 251603058</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Mufarrihah Az Zahra</h5><p>NIM: 251603059</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Kirey Harumi</h5><p>NIM: 251603060</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Khadijah Nur Kamila H.</h5><p>NIM: 251603061</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>M. Ghathaan Faturrahman</h5><p>NIM: 251603063</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Hamas Izzatul Islam</h5><p>NIM: 251603064</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>M. Indra Lesmana Putra</h5><p>NIM: 251603065</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Ahmad Fikri</h5><p>NIM: 251603066</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Fiqri Lutfiansyah</h5><p>NIM: 251603067</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Ananda Alan A'la</h5><p>NIM: 251603068</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Anargya Nismara P.Y.</h5><p>NIM: 251603069</p></div>
+                <div class="member-card"><img src="https://via.placeholder.com/70" class="avatar"><h5>Farrel Zahran Ahsan</h5><p>NIM: 251603070</p></div>
+            </div>
+        </section>
+
+        <section id="galeri" class="section-container tab-content">
+            <h3 class="section-title">Gallery Moments</h3>
+            
+            <div class="galeri-grid">
+                <div class="galeri-item"><img src="fotokelasb.jpeg" alt="Moment 1"></div>
+                <div class="galeri-item"><img src="foto (1).jpeg" alt="Moment 2"></div>
+                <div class="galeri-item"><img src="foto (2).jpeg" alt="Moment 3"></div>
+                <div class="galeri-item"><img src="foto (3).jpeg" alt="Moment 4"></div>
+                <div class="galeri-item"><img src="foto (4).jpeg" alt="Moment 5"></div>
+                <div class="galeri-item"><img src="foto (5).jpeg" alt="Moment 6"></div>
+                <div class="galeri-item"><img src="foto (6).jpeg" alt="Moment 7"></div>
+                <div class="galeri-item"><img src="foto (7).jpeg" alt="Moment 8"></div>
+                <div class="galeri-item"><img src="foto (8).jpeg" alt="Moment 9"></div>
+                <div class="galeri-item"><img src="foto (9).jpeg" alt="Moment 10"></div>
+                <div class="galeri-item"><img src="foto (10).jpeg" alt="Moment 11"></div>
+                <div class="galeri-item"><img src="foto (11).jpeg" alt="Moment 12"></div>
+                <div class="galeri-item"><img src="foto (12).jpeg" alt="Moment 13"></div>
+                <div class="galeri-item"><img src="foto (13).jpeg" alt="Moment 14"></div>
+                <div class="galeri-item"><img src="foto (14).jpeg" alt="Moment 15"></div>
+                <div class="galeri-item"><img src="foto (15).jpeg" alt="Moment 16"></div>
+                <div class="galeri-item"><img src="foto (16).jpeg" alt="Moment 17"></div>
+                <div class="galeri-item"><img src="foto (17).jpeg" alt="Moment 18"></div>
+                <div class="galeri-item"><img src="foto (18).jpeg" alt="Moment 19"></div>
+                <div class="galeri-item"><img src="foto (19).jpeg" alt="Moment 20"></div>
+                <div class="galeri-item"><img src="foto (20).jpeg" alt="Moment 21"></div>
+                <div class="galeri-item"><img src="foto (21).jpeg" alt="Moment 22"></div>
+                <div class="galeri-item"><img src="foto (22).jpeg" alt="Moment 23"></div>
+                <div class="galeri-item"><img src="foto (23).jpeg" alt="Moment 24"></div>
+                <div class="galeri-item"><img src="foto (24).jpeg" alt="Moment 25"></div>
+                <div class="galeri-item"><img src="foto (25).jpeg" alt="Moment 26"></div>
+                <div class="galeri-item"><img src="foto (26).jpeg" alt="Moment 27"></div>
+                <div class="galeri-item"><img src="foto (27).jpeg" alt="Moment 28"></div>
+                <div class="galeri-item"><img src="foto (28).jpeg" alt="Moment 29"></div>
+                <div class="galeri-item"><img src="foto (29).jpeg" alt="Moment 30"></div>
+                <div class="galeri-item"><img src="foto (30).jpeg" alt="Moment 31"></div>
+                <div class="galeri-item"><img src="foto (31).jpeg" alt="Moment 32"></div>
+                <div class="galeri-item"><img src="foto (32).jpeg" alt="Moment 33"></div>
+                <div class="galeri-item"><img src="foto (33).jpeg" alt="Moment 34"></div>
+                <div class="galeri-item"><img src="foto (34).jpeg" alt="Moment 35"></div>
+                <div class="galeri-item"><img src="foto (35).jpeg" alt="Moment 36"></div>
+                <div class="galeri-item"><img src="foto (36).jpeg" alt="Moment 37"></div>
+                <div class="galeri-item"><img src="foto (37).jpeg" alt="Moment 38"></div>
+                <div class="galeri-item"><img src="foto (38).jpeg" alt="Moment 39"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Informatika B. UIN Sultan Maulana Hasanuddin</p>
+        <div class="social-links">
+            <a href="https://instagram.com/debuggers_chil" target="_blank" class="ig-btn">
+                📸 Follow Instagram Kami
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function bukaTab(idTab) {
+            let semuaTab = document.querySelectorAll('.tab-content');
+            semuaTab.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById(idTab).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
