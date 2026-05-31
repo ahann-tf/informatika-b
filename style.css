@@ -221,10 +221,10 @@ nav a:hover {
     background-color: #11192e;
     border: 1px solid #0056b3;
     border-radius: 8px;
-    padding: 25px 20px;
+    padding: 15px 10px; /* Padding dikecilin biar lebih ramping */
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    width: 270px; /* Ukurannya dilebarin dikit biar nama matkul ga berantakan */
+    width: 220px; /* Lebar disamain kayak struktur, ga 270px lagi! */
     max-width: 100%;
 }
 
@@ -234,37 +234,37 @@ nav a:hover {
 }
 
 .pj-foto {
-    width: 90px;
-    height: 90px;
+    width: 70px; /* Foto dikecilin dari 90px jadi 70px */
+    height: 70px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #00a8ff;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 10px auto;
     display: block;
     box-shadow: 0 4px 10px rgba(0, 168, 255, 0.3);
 }
 
 .pj-card h4 {
     color: #ffffff;
-    margin-bottom: 12px;
-    font-size: 18px;
+    margin-bottom: 8px;
+    font-size: 16px; /* Tulisan nama dikecilin */
 }
 
 .pj-label {
     color: #718096;
-    font-size: 13px;
-    margin-bottom: 10px;
+    font-size: 12px;
+    margin-bottom: 8px;
     font-style: italic;
 }
 
 .pj-course {
     color: #00a8ff;
-    font-size: 14px;
+    font-size: 12px; /* Tulisan matkul dikecilin biar ga kepanjangan */
     font-weight: 600;
     background: rgba(0, 123, 255, 0.1);
-    padding: 8px;
+    padding: 5px 8px;
     border-radius: 5px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     border: 1px solid rgba(0, 168, 255, 0.2);
 }
 /* ==========================================
@@ -421,5 +421,31 @@ footer {
     }
     .galeri-item:nth-child(3n) {
         grid-column: span 1;
+    }
+}
+/* ==========================================
+   PERBAIKAN KHUSUS LAYAR HP (RESPONSIVE)
+   ========================================== */
+@media (max-width: 768px) {
+    /* 1. Beranda: Biar teksnya ga kebesaran dan kotaknya pas */
+    .hero-section {
+        padding: 20px;
+        min-height: 400px;
+    }
+    .hero-content h2 {
+        font-size: 32px; /* Tulisan diperkecil dikit buat HP */
+    }
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    /* 2. PJ Matkul: Biar kartunya ga kepotong dan rapi ke bawah */
+    .pj-card {
+        width: 100%; /* Kartu memenuhi layar HP */
+        max-width: 320px; /* Tapi ga terlalu lebar */
+    }
+    .pj-baris-atas, .pj-baris-tengah, .pj-baris-bawah {
+        flex-direction: column; /* Baris diubah jadi kolom sejajar ke bawah */
+        align-items: center;
     }
 }
