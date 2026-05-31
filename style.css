@@ -427,13 +427,28 @@ footer {
    PERBAIKAN KHUSUS LAYAR HP (RESPONSIVE)
    ========================================== */
 @media (max-width: 768px) {
-    /* ... (Kodingan hero-section beranda biarin aja seperti tadi) ... */
+    /* 1. Beranda (Biarin aja isinya kayak yang udah bener tadi) */
+    .hero-section {
+        padding: 30px 15px;
+        min-height: 250px;
+        background-position: top center;
+    }
+    .hero-content h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .hero-content p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
 
-    /* MODE SLIDE/SWIPE: Buat PJ Matkul DAN Struktur Kelas */
+    /* 2. MODE SLIDE/SWIPE: Gabungan buat PJ Matkul & Struktur Kelas */
     .pj-baris-atas, 
     .pj-baris-tengah, 
     .pj-baris-bawah, 
-    index.html { /* <-- Ganti pakai nama class bungkus struktur di HTML kamu */
+    .baris-atas,      /* <-- Ini baris struktur punya kamu */
+    .baris-tengah,    /* <-- Asumsi ada baris tengah di struktur */
+    .baris-bawah {    /* <-- Asumsi ada baris bawah di struktur */
         flex-direction: row; 
         flex-wrap: nowrap; 
         overflow-x: auto; 
@@ -443,7 +458,7 @@ footer {
     }
 
     .pj-card, 
-    index.html { /* <-- Ganti pakai nama class kotak struktur kamu */
+    .card { /* <-- Ini kotak struktur punya kamu */
         flex: 0 0 auto; 
         width: 220px; 
     }
