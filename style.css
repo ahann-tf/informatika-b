@@ -433,7 +433,7 @@ footer {
     .pj-baris-atas, 
     .pj-baris-tengah, 
     .pj-baris-bawah, 
-    .index.html { /* <-- Ganti pakai nama class bungkus struktur di HTML kamu */
+    index.html { /* <-- Ganti pakai nama class bungkus struktur di HTML kamu */
         flex-direction: row; 
         flex-wrap: nowrap; 
         overflow-x: auto; 
@@ -443,7 +443,7 @@ footer {
     }
 
     .pj-card, 
-    .index.html { /* <-- Ganti pakai nama class kotak struktur kamu */
+    index.html { /* <-- Ganti pakai nama class kotak struktur kamu */
         flex: 0 0 auto; 
         width: 220px; 
     }
