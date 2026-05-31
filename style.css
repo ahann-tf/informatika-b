@@ -427,7 +427,7 @@ footer {
    PERBAIKAN KHUSUS LAYAR HP (RESPONSIVE)
    ========================================== */
 @media (max-width: 768px) {
-    /* 1. Beranda (Biarin aja isinya kayak yang udah bener tadi) */
+    /* 1. Beranda */
     .hero-section {
         padding: 30px 15px;
         min-height: 250px;
@@ -442,23 +442,31 @@ footer {
         line-height: 1.4;
     }
 
-    /* 2. MODE SLIDE/SWIPE: Gabungan buat PJ Matkul & Struktur Kelas */
-    .pj-baris-atas, 
-    .pj-baris-tengah, 
-    .pj-baris-bawah, 
-    .baris-atas,      /* <-- Ini baris struktur punya kamu */
-    .baris-tengah,    /* <-- Asumsi ada baris tengah di struktur */
-    .baris-bawah {    /* <-- Asumsi ada baris bawah di struktur */
+    /* 2. MODE SLIDE KHUSUS (Biar nggak berantakin yang lain) */
+    
+    /* Bungkus Struktur (pakai .struktur-wrapper dari HTML kamu tadi) */
+    .struktur-wrapper > div { 
+        display: flex;
         flex-direction: row; 
         flex-wrap: nowrap; 
         overflow-x: auto; 
-        justify-content: flex-start; 
         padding-bottom: 15px; 
         gap: 15px;
     }
+    
+    /* Bungkus PJ Matkul (asumsi class-nya pj-baris-...) */
+    [class*="pj-baris-"] {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 15px;
+        gap: 15px;
+    }
 
-    .pj-card, 
-    .card { /* <-- Ini kotak struktur punya kamu */
+    /* Aturan kartu biar lebarnya pas */
+    .struktur-wrapper .card, 
+    .pj-card {
         flex: 0 0 auto; 
         width: 220px; 
     }
